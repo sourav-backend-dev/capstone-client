@@ -4,7 +4,6 @@ import ListingPage from "./routes/listingPage/listingPage";
 import Layout from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
 import Login from "./routes/login/login";
-import Signup from "./routes/Signup/Signup";
 import AddProperty from "./routes/admin/AddProperty/AddProperty";
 import Dashboard from "./routes/admin/Dashboard/Dashboard";
 import PropertiesPage from "./routes/PropertiesPage/PropertiesPage";
@@ -19,6 +18,7 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import AdminMessagesPanel from "./routes/admin/AdminMessagesPanel/AdminMessagesPanel";
 import AdminAppointments from "./routes/admin/Appointments/Appointments";
 import AppointmentCalendar from "./routes/AppointmentCalendar/AppointmentCalendar";
+import Signup from "./routes/Signup/Signup";
 
 function App() {
   const router = createBrowserRouter([

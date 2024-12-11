@@ -5,7 +5,7 @@ import './Signup.scss';
 import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../../context/AuthContext';
 
-function Signup() {
+const Signup = () => {
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
