@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.scss';
 import { GoogleLogin } from '@react-oauth/google';
 
@@ -123,7 +123,7 @@ const Login = () => {
         <GoogleLogin onSuccess={handleGoogleSuccess} onError={handleGoogleError} />
 
         <p className="form-text">
-          Don't have an account? <a href="/signup">Sign up</a>
+          Don't have an account? <Link className="nav-link" to="/signup">Sign up</Link>
         </p>
       </div>
     </div>
