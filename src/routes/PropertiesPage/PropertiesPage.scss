@@ -1,6 +1,6 @@
 .properties-page {
   // background: linear-gradient(to right, #f8f9fa, #e9ecef);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--text-primary);
 
   h1 {
     font-size: 3rem; // Increased font size
@@ -21,7 +21,7 @@
     padding: 40px 20px;
     text-align: center;
     margin-bottom: 40px; // Space between the banner and content
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--text-primary);
 
     h1 {
       font-size: 3rem;

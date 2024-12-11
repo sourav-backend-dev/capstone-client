@@ -49,7 +49,7 @@
     // background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--text-primary);
     width: 280px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -58,7 +58,7 @@
       // background: #f1a104;
       // color: white;
       transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 20px var(--text-primary);
 
       h2 {
         // color: white;
@@ -67,7 +67,7 @@
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px var(--text-primary);
     }
 
     h2 {

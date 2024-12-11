@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Signup.scss';
 import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../../context/AuthContext';
@@ -176,7 +176,7 @@ const Signup = () => {
             </div>
 
             <p className="form-text">
-              Already have an account? <a href="/login">Login</a>
+              Already have an account? <Link className="nav-link" to="/login">Sign in</Link>
             </p>
 
             <div className="divider">OR</div>

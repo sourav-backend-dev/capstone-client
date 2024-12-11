@@ -2,7 +2,7 @@
   // background: linear-gradient(to right, #f8f9fa, #e9ecef);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--text-primary);
 
   /* Banner Section */
   .banner {
@@ -13,7 +13,7 @@
     text-align: center;
     border-radius: 10px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--text-primary);
 
     h1 {
       font-size: 3rem;
@@ -37,7 +37,7 @@
     padding: 20px;
     // background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px var(--text-primary);
 
     h2 {
       font-size: 2rem;
@@ -84,7 +84,7 @@
       padding: 20px;
       margin: 10px 0;
       width: calc(20% - 20px); /* Three-column layout */
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px var(--text-primary);
       transition: transform 0.3s, box-shadow 0.3s;
 
       display: flex;
@@ -94,7 +94,7 @@
 
       &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px var(--text-primary);
       }
 
       h3 {

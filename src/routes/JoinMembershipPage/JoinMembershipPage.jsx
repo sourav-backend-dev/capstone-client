@@ -20,7 +20,7 @@ function JoinMembershipPage() {
             <li>Priority support</li>
           </ul>
           <button className="cta-button">
-            <a href='https://buy.stripe.com/test_4gw9B3adZ6ym5RmdQQ'>
+            <a href='https://buy.stripe.com/test_4gw9B3adZ6ym5RmdQQ' target='_blank'>
               Join Now
             </a>
           </button>
@@ -37,7 +37,7 @@ function JoinMembershipPage() {
             <li>Dedicated agent support</li>
           </ul>
           <button className="cta-button">
-            <a href='https://buy.stripe.com/test_9AQ28Bfyjg8WcfK289'>
+            <a href='https://buy.stripe.com/test_9AQ28Bfyjg8WcfK289' target='_blank'>
             Join Now
             </a>
             </button>
@@ -54,7 +54,7 @@ function JoinMembershipPage() {
             <li>Free property evaluation</li>
           </ul>
           <button className="cta-button">
-            <a href='https://buy.stripe.com/test_28ofZr2LxcWK6Vq7su'>
+            <a href='https://buy.stripe.com/test_28ofZr2LxcWK6Vq7su' target='_blank'>
             Join Now
             </a>
             </button>
