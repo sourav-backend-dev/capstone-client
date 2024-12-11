@@ -27,7 +27,7 @@ function PropertyCard({ property }) {
         src={property.imageUrl.split(',')[0]}
         alt={property.title}
         className="property-image"
-        style={{ height: '250px', width: '285px' }}
+        style={{ height: '250px' }}
       />
       <h2 className="property-title">{property.title}</h2>
       <p className="property-details">
