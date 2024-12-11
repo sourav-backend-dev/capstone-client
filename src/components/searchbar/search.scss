@@ -1,0 +1,57 @@
+@import "../../responsive.scss";
+.search{
+    display: inline-block;
+    .type{
+
+        button{
+            padding: 15px 35px;
+            border: 1px solid black;
+            cursor: pointer;
+            // testbackground-// color: white;
+            border-bottom: none;
+    
+            &.active{
+                // testbackground-// color: rgb(0, 0, 41);
+                // color: white;
+            }
+        }
+    }
+    
+    form{
+        border: 1px solid rgb(0, 0, 41);
+        display: flex;
+        justify-content: space-between;
+        height: 63px;
+        gap: 5px;
+        width: 700px;
+    
+        input{
+            border: none;
+            padding: 0px 8px;
+            width: 200px;
+
+            @include largeFun{
+                padding: 0px 4px;
+
+                &:nth-child(2),:nth-child(3){
+                    width: 140px;
+                }
+            }
+        }
+
+      
+        button{
+            border: none;
+            cursor: pointer;
+            // testbackground-// color: rgb(255, 211, 16);
+            width: 10%;
+        }
+
+        @include smallFun{
+            // width: 500px;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+

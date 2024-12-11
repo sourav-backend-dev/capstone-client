@@ -1,0 +1,107 @@
+.add-property {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // testbackground-color: #fff;
+
+  /* Style the container */
+  .toggle-container {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+  }
+
+  /* Hide the default checkbox input */
+  .toggle input {
+    display: none;
+  }
+
+  /* Create the slider (the toggle switch) */
+  .toggle .slider {
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 50px;
+    transition: 0.4s;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* The circle inside the slider */
+  .toggle .slider:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  /* When the checkbox is checked, change the background and move the circle */
+  .toggle input:checked+.slider {
+    background-color: #4caf50;
+  }
+
+  .toggle input:checked+.slider:before {
+    transform: translateX(26px);
+  }
+
+  /* Label text styling */
+  .toggle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .toggle input:checked+.slider+span {
+    font-weight: bold;
+    color: #4caf50;
+  }
+
+
+  h1 {
+    text-align: center;
+    // color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 95%;
+
+      &:focus {
+        border-color: #4CAF50; // Highlight color
+        outline: none;
+      }
+    }
+
+    button {
+      padding: 10px;
+      // testbackground-color: #4CAF50; // Green
+      // color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        // testbackground-color: #45a049; // Darker green on hover
+      }
+    }
+  }
+}

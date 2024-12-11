@@ -1,0 +1,108 @@
+.footer {
+  // background: #4c5881; /* Matches the navbar's menu-items background for consistency */
+  // color: white;
+  padding: 40px 0px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+
+  .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .footer-section {
+          flex: 1;
+          min-width: 250px;
+
+          h4 {
+              font-size: 18px;
+              margin-bottom: 15px;
+             // color: #f1f1f1;
+              text-transform: uppercase;
+          }
+
+          p {
+              font-size: 14px;
+              line-height: 1.5;
+             // color: #d3d3d3;
+          }
+
+          ul {
+              list-style: none;
+              padding: 0;
+
+              li {
+                  margin-bottom: 10px;
+
+                  a {
+                      text-decoration: none;
+                     color: #f1f1f1;
+                      font-size: 14px;
+                      transition: color 0.3s;
+
+                      &:hover {
+                         // color: #7d92e6; /* Highlight color */
+                      }
+                  }
+              }
+          }
+
+          .social-icons {
+              display: flex;
+              gap: 15px;
+
+              a {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 35px;
+                  height: 35px;
+                  border-radius: 50%;
+                  background: rgba(255, 255, 255, 0.1);
+                 // color: #f1f1f1;
+                  transition: background 0.3s, color 0.3s;
+
+                  svg {
+                      font-size: 16px;
+                  }
+
+                  &:hover {
+                      // background: #7d92e6;
+                      // color: white;
+                  }
+              }
+          }
+      }
+  }
+
+  .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+      p {
+          font-size: 14px;
+         // color: #d3d3d3;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .footer-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .footer-section {
+          text-align: center;
+
+          .social-icons {
+              justify-content: center;
+          }
+      }
+  }
+}

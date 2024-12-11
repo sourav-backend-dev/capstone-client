@@ -1,0 +1,19 @@
+@import "../../responsive.scss";
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  @include largeFun {
+    // testbackground-// color: rgb(245, 245, 245);
+  }
+  @include mediumFun {
+    // testbackground-// color: rgb(245, 245, 245);
+  }
+  @include smallFun {
+    // testbackground-// color: rgb(245, 245, 245);
+  }
+  .content {
+    min-height: 80vh;
+    margin-top: 60px;
+  }
+}

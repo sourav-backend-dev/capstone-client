@@ -1,0 +1,139 @@
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  // testbackground-color: #f9f9f9;
+ // color: #333;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+   // color: #2c3e50;
+  }
+
+  .property-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    // testbackground-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    th {
+      // testbackground-color: #2c3e50;
+     // color: #ffffff;
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    tr:nth-child(even) {
+      // testbackground-color: #f2f2f2;
+    }
+
+    tr:hover {
+      // testbackground-color: #f0f8ff;
+    }
+
+    .thumbnail {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    button {
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .edit-btn {
+      // testbackground-color: #3498db; // Blue
+      // color: white;
+
+      &:hover {
+        // testbackground-color: #2980b9; // Darker blue
+      }
+    }
+
+    .delete-btn {
+      // testbackground-color: #e74c3c; // Red
+      // color: white;
+
+      &:hover {
+        // testbackground-color: #c0392b; // Darker red
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .property-table {
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .thumbnail {
+        width: 60px;
+        height: 45px;
+      }
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .property-table {
+      th, td {
+        font-size: 10px;
+        padding: 5px;
+      }
+
+      .thumbnail {
+        width: 50px;
+        height: 40px;
+      }
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+  }
+}

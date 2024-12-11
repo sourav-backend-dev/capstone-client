@@ -1,0 +1,139 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  // background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+ // color: #333;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-subtext {
+  font-size: 1rem;
+ // color: #555;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  .login-input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    width: 90%;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  .login-button {
+    padding: 12px;
+    font-size: 1rem;
+   // color: #fff;
+    // background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      // testbackground-color: #0056b3;
+    }
+
+    &:disabled {
+      // testbackground-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.google-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 1rem;
+ // color: #333;
+  // background: #f7f9fc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    // background: #e0e0e0;
+  }
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 0.9rem;
+ // color: #999;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    width: 40%;
+    // background: #ccc;
+    position: absolute;
+    top: 50%;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.form-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+
+  a {
+   // color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

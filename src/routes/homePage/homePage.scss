@@ -1,0 +1,128 @@
+@import "../../responsive.scss";
+
+.home {
+  display: block;
+  height: 100%;
+  
+  .filterComponent{
+    padding: 50px;
+  }
+
+  .txtContainer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+   // color: #333;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+   // color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 20px;
+
+    .box {
+      // testbackground-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      text-align: center;
+
+      h1 {
+        font-size: 2.5rem;
+       // color: #007bff;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+       // color: #333;
+        margin-top: 10px;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .newly-listed-properties {
+    // testbackground-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 40px;
+
+    h2 {
+      font-size: 2rem;
+     // color: #333;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .property-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  @include smallFun {
+    .txtContainer {
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .boxes {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .newly-listed-properties {
+      padding: 30px 15px;
+    }
+
+    .property-cards {
+      gap: 10px;
+    }
+  }
+
+  @include mediumFun {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .boxes {
+      flex-direction: row;
+    }
+  }
+}
+

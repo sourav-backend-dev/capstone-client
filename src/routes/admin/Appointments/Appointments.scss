@@ -1,0 +1,57 @@
+.admin-messages-panel {
+    padding: 40px;
+    // background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+     // color: #343a40;
+      text-align: center;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  
+      thead {
+        // background: #007bff;
+       // color: #fff;
+  
+        th {
+          padding: 10px;
+          text-align: left;
+        }
+      }
+  
+      tbody {
+        tr:nth-child(even) {
+          // background: #f1f1f1;
+        }
+  
+        td {
+          padding: 10px;
+          border: 1px solid #ddd;
+          word-break: break-word;
+        }
+      }
+    }
+    .email-button {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+       // color: #fff;
+        // testbackground-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      
+        &:hover {
+          // testbackground-color: #0056b3;
+        }
+      }
+      
+  }
+  

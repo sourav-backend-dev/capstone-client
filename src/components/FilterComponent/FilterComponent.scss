@@ -1,0 +1,122 @@
+@import "../../responsive.scss";
+
+.filter-layout {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.voice-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  // testbackground-color: #007bff;
+  // color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.voice-button:focus {
+  outline: none;
+}
+
+.voice-button:active {
+  // testbackground-color: #0056b3;
+}
+
+.filter-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    select,
+    input,
+    button {
+      padding: 8px;
+      font-size: 16px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    input{
+      width: 94%;
+    }
+    select{
+      height: 40px;
+    }
+
+    button {
+      // testbackground-color: #ffd30d;
+      cursor: pointer;
+      font-weight: bold;
+      height: 45px;
+
+      &:hover {
+        // testbackground-color: #003366;
+        // color: white;
+      }
+    }
+  }
+}
+
+.property-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+
+  .property-card {
+    width: 300px; // Adjust width as needed for card design
+    margin-bottom: 20px;
+  }
+}
+
+@include smallFun {
+  .filter-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .property-results {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}

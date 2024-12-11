@@ -1,0 +1,72 @@
+.card{
+    display: flex;
+    gap: 20px;
+    // testbackground-// color: rgb(234, 234, 234);
+    box-shadow: 5px 5px 20px rgb(208, 208, 208);
+    .imgContainer{
+        flex: 2;
+        height: 180px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+    }
+    .txtContainer{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3px;
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            // color: rgb(1, 1, 82);
+            transition: all 0.4s ease;
+            text-decoration: none;
+
+            &:hover{
+                color:rgb(21, 21, 118) ;
+                scale: 1.03;
+            } 
+
+            h2{
+                margin: 0;
+            }
+        }
+
+        .address{
+            size: 14px;
+            // color: rgb(105, 105, 105);
+            margin: 0;
+        }
+
+        .price{
+            font-size: 18px;
+            font-weight: 400;
+            padding: 5px;
+            // // testbackground-color: aqua;
+            border: 1px solid rgb(1, 1, 78);
+           width: max-content;
+        }
+
+        .bottom{
+            .features{
+                display: flex;
+                gap: 15px;
+            }
+            .feature{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 5px;
+                border: 1px solid rgb(1, 1, 78);
+                width: max-content;
+            }
+        }
+    }
+}

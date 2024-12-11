@@ -1,0 +1,97 @@
+:root {
+    --bg-primary: #f7f7f7;
+    --bg-secondary: #e3e6eb;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-primary: #4a90e2;
+    --navabr-primary: #c3d0df;
+    --accent-secondary: #ffc107;
+    --border-shadow: #d1d5da;
+  }
+  
+  [data-theme="dark"] {
+    --bg-primary: #1c1e21;
+    --bg-secondary: #2a2d31;
+    --text-primary: #ededed;
+    --text-secondary: #a3a3a3;
+    --accent-primary: #6ab8ff;
+    --navbar-primary: #05305c;
+    --accent-secondary: #ffca28;
+    --border-shadow: #3e4044;
+  }
+
+  
+  [data-theme="light"] {
+    --bg-primary: #f7f7f7;
+    --bg-secondary: #e3e6eb;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-primary: #4a90e2;
+    --navabr-primary: #c3d0df;
+    --accent-secondary: #ffc107;
+    --border-shadow: #d1d5da;
+  }
+
+  
+
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar {
+    background: #05305c;
+    color: #FFFFFF;
+  }
+  .footer {
+    background: #05305c;
+    color: #FFFFFF;
+  }
+  
+  .nav-link {
+    color: var(--text-primary);
+  }
+  
+  .theme-toggle {
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  input, textarea,select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-shadow);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: var(--accent-primary);
+    outline: none;
+    box-shadow: 0 0 4px var(--accent-primary);
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--accent-secondary);
+    color: var(--bg-primary);
+  }
+  

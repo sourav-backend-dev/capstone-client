@@ -1,0 +1,126 @@
+.property-card {
+  // testbackground-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 280px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  a {
+    text-decoration: none;
+   // color: #333;
+
+    &:hover {
+     color: #007bff;
+    }
+  }
+
+  .property-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .property-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+   // color: #222;
+    margin-bottom: 10px;
+  }
+
+  .property-details,
+  .property-location {
+    font-size: 1rem;
+   // color: #555;
+    margin: 5px 0;
+
+  }
+
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+    .wishlist-button {
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+     // color: #ccc;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s, color 0.3s;
+
+      &.active {
+        color: red;
+        border-color: red;
+      }
+
+      &:hover {
+        color: red;
+        // testbackground-// color: rgba(255, 0, 0, 0.1);
+      }
+    }
+
+    .property-link {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+
+      &:hover {
+        // testbackground-color: #0056b3;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .property-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &:hover {
+      transform: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 10px;
+
+    .wishlist-button {
+      width: 100%;
+    }
+
+    .property-link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

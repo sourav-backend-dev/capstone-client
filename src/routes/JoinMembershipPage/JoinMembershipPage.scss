@@ -1,0 +1,138 @@
+.join-membership-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+ // color: #333;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+   // color: #1e87f0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+   // color: #555;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  .plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .plan-card {
+    // background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &.featured {
+      // background: #f1a104;
+      // color: white;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+      h2 {
+        // color: white;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+     // color: #1e87f0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+     // color: #333;
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+
+      li {
+        margin: 10px 0;
+        font-size: 1rem;
+       // color: #555;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      // testbackground-color: #1e87f0;
+      // color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        // testbackground-color: #155a8a;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}

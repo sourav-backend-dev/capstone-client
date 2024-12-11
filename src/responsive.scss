@@ -1,0 +1,15 @@
+@mixin smallFun{
+    @media(max-width: 738px){
+    @content;
+    }
+}
+@mixin mediumFun{
+    @media(max-width: 1024px){
+    @content;
+    }
+}
+@mixin largeFun{
+    @media(max-width: 1700px){
+    @content;
+    }
+}

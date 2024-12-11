@@ -1,0 +1,103 @@
+.appointment-calendar {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--text-primary);
+    }
+  
+    .rbc-calendar {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color:var(--bg-primary);
+      overflow: hidden;
+  
+      .rbc-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #162c5c;
+        color:#ffffff;
+  
+        .rbc-btn-group {
+          button {
+            border: none;
+            background: var(--accent-primary);
+            color: var(--text-primary);
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+  
+            &:hover {
+              background:  var(--accent-primary);
+              color: var(--text-primary);
+            }
+          }
+  
+          .rbc-active {
+            background:  var(--accent-primary);
+            color: var(--text-primary);
+          }
+        }
+  
+        .rbc-toolbar-label {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+  
+      .rbc-time-header {
+        background-color: var(--bg-primary);
+        font-weight: bold;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      .rbc-time-content {
+        .rbc-event {
+          background-color: var(--accent-secondary);
+          border: none;
+          color:#000000;
+          font-size: 0.8rem;
+          border-radius: 4px;
+          padding: 2px 5px;
+        }
+      }
+  
+      .rbc-timeslot-group {
+        .rbc-time-slot {
+          border-top: 1px solid #eee;
+        }
+      }
+  
+      .rbc-today {
+        background-color: var(--bg-primary);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .rbc-toolbar-label {
+        font-size: 1rem;
+      }
+  
+      .rbc-calendar {
+        font-size: 0.9rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .rbc-toolbar {
+        flex-direction: column;
+  
+        .rbc-btn-group {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  

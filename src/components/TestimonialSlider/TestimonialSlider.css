@@ -1,0 +1,13 @@
+.testimonial-slide {
+  text-align: center;
+  padding: 20px;
+  // testbackground-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-slide p {
+  font-size: 1.2em;
+ // color: #333;
+  line-height: 1.5;
+}

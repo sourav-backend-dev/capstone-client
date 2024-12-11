@@ -1,0 +1,43 @@
+.filterPart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+        font-weight: 320;
+    font-size: 25px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        label{
+            font-size: 10px;
+        }
+        input,select{
+            width: 100px;
+            padding: 10px;
+            border: 1px solid rgb(0, 9, 70);
+            font-size: 13px;
+        }
+
+    }
+    .topPart{
+        input{
+            width: 100%;
+        }
+    }
+    .bottomPart{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        button{
+            width: 100px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            // testbackground-// color: rgb(255, 222, 0);
+        }
+    }
+}

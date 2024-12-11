@@ -1,0 +1,106 @@
+@import "../../responsive.scss";
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.inputflex{
+  display: flex;
+  flex-direction: column;
+}
+.voice-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.voice-button:focus {
+  outline: none;
+}
+
+.filter-component {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0px auto;
+
+
+    select,
+    input,
+    button {
+      padding: 8px 12px;
+      border: 1px solid rgb(0, 0, 41);
+      font-size: 16px;
+      width: 250px;
+      height: 30px;
+    }
+
+    select {
+      height: 47px;
+    }
+
+    button {
+      cursor: pointer;
+      width: auto;
+      height: 47px;
+      padding: 10px 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      
+    }
+
+    // Align inputs properly on small devices
+    @include smallFun {
+      flex-direction: column; // Stack elements vertically on smaller screens
+      align-items: stretch;
+      width: 100%; // Make the filter take up the full width on mobile
+
+      select,
+      input,
+      button {
+        width: 100%; // Inputs and button take up the full width
+        padding: 12px; // Adjust padding for better touch interaction
+      }
+    }
+  }
+
+  .property-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: auto 20px;
+
+    // Style for property cards (you can adjust based on your card design)
+    .property-card {
+
+      // Ensures the property cards are responsive
+      @include smallFun {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
